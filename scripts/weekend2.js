@@ -21,11 +21,11 @@ $( document ).ready( function(){
     nextStudent();
   }); // end nextButton on click
 
-  $( 'body' ).on( 'click', '#prevButton', 'click', function(){
+  $( 'body' ).on( 'click', '#prevButton', function(){
     previousStudent();
   }); // end prevButton on click
 
-  $( 'body' ).on( 'click', '.setStudent', 'click', function(){
+  $( 'body' ).on( 'click', '.setStudent', function(){
     // get the data-index tag from html with $( this ).attr
     // make it a number and set it as currentStudent
     currentStudent = Number( $( this ).attr( "data-index" ) );
